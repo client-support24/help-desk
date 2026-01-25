@@ -2,12 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Help Desk</title>
-  <meta http-equiv="refresh" content="0; url=https://discord.gg/vpUktKkZf7">
-  <script>
-    window.location.replace("https://discord.gg/vpUktKkZf7");
-  </script>
+  <title>Support Ticket</title>
   <meta name="robots" content="noindex,nofollow">
+  <script>
+    (function() {
+      var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      if (isMobile) {
+        // Try app deep link
+        window.location = "discord:///#@discord.gg/vpUktKkZf7";
+        // Fallback to web invite
+        setTimeout(function() {
+          window.location = "https://discord.gg/vpUktKkZf7";
+        }, 1200);
+      } else {
+        // Desktop: web invite
+        window.location.replace("https://discord.gg/vpUktKkZf7");
+      }
+    })();
+  </script>
 </head>
 <body>Redirecting…</body>
 </html>
