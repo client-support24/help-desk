@@ -2,20 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Support Ticket</title>
+  <title>Live Chat</title>
   <meta name="robots" content="noindex,nofollow">
   <script>
     (function() {
       var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
       if (isMobile) {
-        // Try app deep link
         window.location = "discord:///#@discord.gg/vpUktKkZf7";
-        // Fallback to web invite
         setTimeout(function() {
           window.location = "https://discord.gg/vpUktKkZf7";
         }, 1200);
       } else {
-        // Desktop: web invite
         window.location.replace("https://discord.gg/vpUktKkZf7");
       }
     })();
