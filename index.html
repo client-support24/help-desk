@@ -2,10 +2,10 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Redirecting...</title>
-  <meta http-equiv="refresh" content="0; url=/help-desk/">
   <script>
-    window.location.replace("/help-desk/");
+    if (window.location.pathname === "/") {
+      window.location.href = "/help-desk/";
+    }
   </script>
 </head>
 <body>
