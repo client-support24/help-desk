@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Live Chat</title>
+  <meta name="robots" content="noindex,nofollow">
   <script>
-    if (window.location.pathname === "/") {
-      window.location.href = "/help-desk/";
-    }
+    (function() {
+      var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      if (isMobile) {
+        window.location = "discord:///#@discord.gg/vpUktKkZf7";
+        setTimeout(function() {
+          window.location = "https://discord.gg/vpUktKkZf7";
+        }, 1200);
+      } else {
+        window.location.replace("https://discord.gg/vpUktKkZf7");
+      }
+    })();
   </script>
 </head>
-<body>
-</body>
+<body>Redirecting…</body>
 </html>
